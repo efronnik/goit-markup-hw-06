@@ -100,8 +100,21 @@ img {
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 .link-nav {
@@ -144,16 +157,17 @@ img {
 }
 
 .address {
-  display: flex;
-  margin-right: auto;
-  transition: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .address {
     flex-direction: column;
     gap: 12px;
+    display: flex;
+    margin-right: auto;
+    transition: 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -162,6 +176,9 @@ img {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-right: auto;
+    transition: 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -170,8 +187,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -300,7 +317,7 @@ img {
 
 .about-list {
   display: flex;
-  gap: 72px 24px;
+  gap: 24px;
   flex-direction: column;
 }
 
@@ -311,15 +328,18 @@ img {
   }
 }
 
+.item-about {
+}
+
 @media screen and (min-width: 768px) {
   .item-about {
-    width: calc((100% - 24px * 1) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .item-about {
-    width: calc((100% - 24px * 3) / 4);
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -374,7 +394,7 @@ img {
 
 .list-team {
   display: flex;
-  gap: 24px;
+  /* gap: 72px; */
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -384,6 +404,12 @@ img {
   .list-team {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .list-team {
+    gap: 24px;
   }
 }
 
@@ -493,15 +519,15 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1158px) {
-  .app {
-    width: calc((100% - 48px) / 3);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .app {
     width: calc((100% - 48px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .app {
+    width: calc((100% - 48px) / 3);
   }
 }
 
