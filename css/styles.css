@@ -159,6 +159,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .address {
+    display: flex;
     flex-direction: row;
     gap: 40px;
   }
