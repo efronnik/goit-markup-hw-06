@@ -6,6 +6,7 @@ body {
 .container {
   padding: 0 16px;
   margin: 0 auto;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -328,7 +329,7 @@ img {
 
 .about-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-direction: column;
 }
 
@@ -373,18 +374,33 @@ img {
 
 .subtitle-about {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1158px) {
+  .subtitle-about {
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 .text-about {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media screen and (min-width: 1158px) {
+  .text-about {
+    font-weight: 400;
+  }
 }
 
 /* TEAM SECTION */
@@ -405,7 +421,7 @@ img {
 
 .list-team {
   display: flex;
-  /* gap: 72px; */
+  gap: 72px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
