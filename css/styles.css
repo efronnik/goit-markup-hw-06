@@ -1106,6 +1106,38 @@ img {
   opacity: 1;
 }
 
+.close-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover,
+.close-btn:focus,
+.close-btn:active {
+  border: none;
+  background-color: #404bbf;
+}
+.close-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon,
+.close-btn:active .close-btn-icon {
+  fill: #ffffff;
+}
+
 .menu-tel-list {
   display: flex;
   flex-direction: column;
