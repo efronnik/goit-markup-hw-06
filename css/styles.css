@@ -207,13 +207,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .burger-menu {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .burger-menu {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -329,7 +329,7 @@ img {
 
 .about-list {
   display: flex;
-  gap: 72px;
+  gap: 72px 24px;
   flex-direction: column;
 }
 
@@ -431,6 +431,8 @@ img {
   .list-team {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
   }
 }
 
@@ -548,7 +550,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .app {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
